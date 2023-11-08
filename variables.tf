@@ -4,7 +4,7 @@ variable "api" {
 }
 
 variable "gcp_project_id" {
-  default = "cathaysec-bcm" # 填寫 project id
+  default = "project-name" # 填寫 project id
 }
 
 variable "gcp_region" {
@@ -12,7 +12,7 @@ variable "gcp_region" {
 }
 
 variable "gcp_vpc_name" {
-  default = "cathaysec-vpc" # 填寫 vpc name
+  default = "vpc-name" # 填寫 vpc name
 }
 
 variable "gcp_vpc_subnet" {
@@ -23,8 +23,8 @@ variable "gcp_vpc_subnet" {
   })
 
   default = {
-    name          = "cathaysub-174", # 填寫 subnet name
-    ip_cidr_range = "192.168.174.0/24" # 填寫 subnet CIDR range
+    name          = "subnet-name", # 填寫 subnet name
+    ip_cidr_range = "10.0.0.0/24" # 填寫 subnet CIDR range
     region        = "asia-east1"  # 填寫 subnet region
   }
 }
